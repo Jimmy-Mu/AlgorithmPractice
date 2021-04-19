@@ -10,7 +10,7 @@ public class TestClass {
 
     public static void main(String[] args) {
         System.out.println("testtest");
-        test12();
+        test13();
     }
 
     private static void test1() {
@@ -103,6 +103,11 @@ public class TestClass {
         });
 
         zz012PacificAtlanticWaterFlow.work();
+    }
+
+    private static void test13() {
+        Zz013Permutations zz013Permutations = new Zz013Permutations(new int[]{1,2,3});
+        zz013Permutations.work();
     }
 
 }
