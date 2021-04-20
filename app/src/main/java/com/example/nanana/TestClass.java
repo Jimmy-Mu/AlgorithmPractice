@@ -10,7 +10,7 @@ public class TestClass {
 
     public static void main(String[] args) {
         System.out.println("testtest");
-        test13();
+        test14();
     }
 
     private static void test1() {
@@ -108,6 +108,10 @@ public class TestClass {
     private static void test13() {
         Zz013Permutations zz013Permutations = new Zz013Permutations(new int[]{1,2,3});
         zz013Permutations.work();
+    }
+    private static void test14() {
+        Zz014Combinations zz014Combinations = new Zz014Combinations(4,2);
+        zz014Combinations.work();
     }
 
 }
