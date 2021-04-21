@@ -33,25 +33,20 @@ public class Zz014Combinations {
         List<Integer> path = new ArrayList<>();
 
         boolean[] used = new boolean[n + 1];
-        dfs(0, out, path, used);
+        dfs(1, out, path, used);
         System.out.println(Arrays.toString(out.toArray()));
     }
 
-    private void dfs(int depth, List<List<Integer>> out, List<Integer> path, boolean[]used) {
-
-        if (depth == k) {
+    private void dfs(int depth, List<List<Integer>> out, List<Integer> path, boolean[] used) {
+        if (path.size() == k) {
             out.add(new ArrayList<>(path));
             return;
         }
 
-        for (int i = 1 ; i <= n ; i++) {
-            if (!used[i]) {
-                path.add(i);
-                used[i] = true;
-                dfs(depth+1, out, path, used);
-                used[i] = false;
-                path.remove(Integer.valueOf(i));
-            }
+        for (int i = depth; i <= n; i++) {
+            path.add(i);
+            dfs(i + 1, out, path, used);
+            path.remove(Integer.valueOf(i));
         }
     }
 }
