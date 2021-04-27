@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 /**
  * 如果没有特殊说明，采用如下的数据结构表示链表的一个节点。
+ *
  * @see ListNode
  */
 public class TestClass {
@@ -77,41 +78,51 @@ public class TestClass {
 
     private static void test10() {
         Zz010MaxAreaOfIsland zz010MaxAreaOfIsland = new Zz010MaxAreaOfIsland(new int[][]{
-                {1,0,1,1,0,1,0,1},
-                {1,0,1,1,0,1,1,1},
-                {0,0,0,0,0,0,0,1}
+                { 1, 0, 1, 1, 0, 1, 0, 1 },
+                { 1, 0, 1, 1, 0, 1, 1, 1 },
+                { 0, 0, 0, 0, 0, 0, 0, 1 }
         });
         zz010MaxAreaOfIsland.work();
     }
 
     private static void test11() {
         Zz011FriendsCircles zz011FriendsCircles = new Zz011FriendsCircles(new int[][]{
-                {1,1,0},
-                {1,1,0},
-                {0,0,1}
+                { 1, 1, 0 },
+                { 1, 1, 0 },
+                { 0, 0, 1 }
         });
         zz011FriendsCircles.work();
     }
 
     private static void test12() {
         Zz012PacificAtlanticWaterFlow zz012PacificAtlanticWaterFlow = new Zz012PacificAtlanticWaterFlow(new int[][]{
-                {1,2,2,3,5},
-                {3,2,3,4,4},
-                {2,4,5,3,1},
-                {6,7,1,4,5},
-                {5,1,1,2,4},
+                { 1, 2, 2, 3, 5 },
+                { 3, 2, 3, 4, 4 },
+                { 2, 4, 5, 3, 1 },
+                { 6, 7, 1, 4, 5 },
+                { 5, 1, 1, 2, 4 },
         });
 
         zz012PacificAtlanticWaterFlow.work();
     }
 
     private static void test13() {
-        Zz013Permutations zz013Permutations = new Zz013Permutations(new int[]{1,2,3});
+        Zz013Permutations zz013Permutations = new Zz013Permutations(new int[]{ 1, 2, 3 });
         zz013Permutations.work();
     }
+
     private static void test14() {
-        Zz014Combinations zz014Combinations = new Zz014Combinations(4,2);
+        Zz014Combinations zz014Combinations = new Zz014Combinations(4, 2);
         zz014Combinations.work();
+    }
+
+    private static void test15() {
+        Zz015WordSearch zz015WordSearch = new Zz015WordSearch("ABCCED", new char[][]{
+                { 'A', 'B', 'C', 'E' },
+                { 'S', 'F', 'C', 'F' },
+                { 'A', 'D', 'E', 'E' }
+        });
+        zz015WordSearch.work();
     }
 
 }
